@@ -1,8 +1,8 @@
-# Scope Fast Bloom
+# Scope Bloom
 
-Lightweight GPU bloom/glow postprocessor for [Daydream Scope](https://daydream.live).
+GPU bloom/glow postprocessor for [Daydream Scope](https://daydream.live).
 
-Zero-overhead bloom via bilinear downsample-upsample — no convolution kernels. Extracts bright areas above threshold, blurs via resolution reduction, blends back as additive glow.
+Extracts bright areas above a threshold, applies fast downsample-upsample blur, and blends back as additive glow. Classic bloom effect, real-time on MPS and CUDA.
 
 ## Parameters
 
@@ -16,14 +16,14 @@ Zero-overhead bloom via bilinear downsample-upsample — no convolution kernels.
 
 In Scope **Settings > Nodes**, paste:
 ```
-git+https://github.com/555n/scope-fast-bloom.git
+git+https://github.com/555n/scope-bloom.git
 ```
 
 ## Notes
 
 - Postprocessor — add after diffusion, before RIFE
 - All parameters runtime-controllable and sequenceable
-- Fast: bilinear downsample/upsample only, no conv2d
+- Fast bilinear downsample/upsample — no convolution kernels
 - MPS-safe (Apple Silicon compatible)
 
 MIT License
