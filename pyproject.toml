@@ -1,5 +1,5 @@
 [project]
-name = "scope-bloom"
+name = "scope-fast-bloom"
 version = "0.1.0"
 description = "GPU bloom/glow postprocessor for Daydream Scope"
 readme = "README.md"

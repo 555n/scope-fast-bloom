@@ -16,7 +16,7 @@ Zero-overhead bloom via bilinear downsample-upsample — no convolution kernels.
 
 In Scope **Settings > Nodes**, paste:
 ```
-git+https://github.com/555n/scope-bloom.git
+git+https://github.com/555n/scope-fast-bloom.git
 ```
 
 ## Notes
